@@ -41,7 +41,7 @@ function cleanFolderRecursive(folder) {
 };
 
 try {
-  cleanFolderRecursive(RELEASE_DIR);
+  // cleanFolderRecursive(RELEASE_DIR);
 } catch(e) {
   console.log(e);
   process.exit(1);
