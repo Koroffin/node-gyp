@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\projects\node-pty\build\Release\node_addon_api_except</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\projects\node-pty\build\Release\winpty-agent.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\projects\node-pty\build\Release\winpty.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\projects\node-pty\build\Release\pty.node</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

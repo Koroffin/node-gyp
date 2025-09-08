@@ -1,0 +1,3 @@
+C:\projects\node-pty\src\win\conpty.cc;C:\projects\node-pty\build\Release\obj\conpty\src\win\conpty.obj
+C:\projects\node-pty\src\win\path_util.cc;C:\projects\node-pty\build\Release\obj\conpty\src\win\path_util.obj
+C:\projects\node-pty\node_modules\.pnpm\node-gyp@11.4.2\node_modules\node-gyp\src\win_delay_load_hook.cc;C:\projects\node-pty\build\Release\obj\conpty\win_delay_load_hook.obj
