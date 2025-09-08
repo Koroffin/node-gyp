@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winpty-agent", "winpty-agent.vcxproj", "{6DB4CB63-BF89-36DF-4AC6-8B1442B03351}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winpty-debugserver", "winpty-debugserver.vcxproj", "{F51DDBFB-ABB3-CBFF-DB9A-0F7205B1F317}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winpty", "winpty.vcxproj", "{FFD1CDC2-E1B1-4F08-3D66-2B63B83EF3A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DB4CB63-BF89-36DF-4AC6-8B1442B03351}.Debug|x64.ActiveCfg = Debug|x64
+		{6DB4CB63-BF89-36DF-4AC6-8B1442B03351}.Debug|x64.Build.0 = Debug|x64
+		{6DB4CB63-BF89-36DF-4AC6-8B1442B03351}.Release|x64.ActiveCfg = Release|x64
+		{6DB4CB63-BF89-36DF-4AC6-8B1442B03351}.Release|x64.Build.0 = Release|x64
+		{F51DDBFB-ABB3-CBFF-DB9A-0F7205B1F317}.Debug|x64.ActiveCfg = Debug|x64
+		{F51DDBFB-ABB3-CBFF-DB9A-0F7205B1F317}.Debug|x64.Build.0 = Debug|x64
+		{F51DDBFB-ABB3-CBFF-DB9A-0F7205B1F317}.Release|x64.ActiveCfg = Release|x64
+		{F51DDBFB-ABB3-CBFF-DB9A-0F7205B1F317}.Release|x64.Build.0 = Release|x64
+		{FFD1CDC2-E1B1-4F08-3D66-2B63B83EF3A2}.Debug|x64.ActiveCfg = Debug|x64
+		{FFD1CDC2-E1B1-4F08-3D66-2B63B83EF3A2}.Debug|x64.Build.0 = Debug|x64
+		{FFD1CDC2-E1B1-4F08-3D66-2B63B83EF3A2}.Release|x64.ActiveCfg = Release|x64
+		{FFD1CDC2-E1B1-4F08-3D66-2B63B83EF3A2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
