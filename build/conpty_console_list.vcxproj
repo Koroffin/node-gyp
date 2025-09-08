@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/guard:cf /w34244 /we4267 /ZH:SHA_256 /Zc:__cplusplus -std:c++20 /Zm2000 %(AdditionalOptions)</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -74,7 +74,7 @@
       <AdditionalOptions>/LTCG:INCREMENTAL %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\\Users\\Nikita Korovin\\AppData\\Local\\node-gyp\\Cache\\24.6.0\\x64\\node.lib&quot;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;delayimp.lib;&quot;C:\\Users\\Nikita Korovin\\AppData\\Local\\node-gyp\\Cache\\24.7.0\\x64\\node.lib&quot;</AdditionalDependencies>
       <AdditionalOptions>/guard:cf /LTCG:INCREMENTAL /ignore:4199 %(AdditionalOptions)</AdditionalOptions>
       <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -86,13 +86,13 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=conpty_console_list;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;_FILE_OFFSET_BITS=64;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_CPP_EXCEPTIONS;_HAS_EXCEPTIONS=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/guard:cf /w34244 /we4267 /ZH:SHA_256 /Zc:__cplusplus -std:c++20 /Zm2000 %(AdditionalOptions)</AdditionalOptions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
@@ -120,7 +120,7 @@
       <AdditionalOptions>/LTCG:INCREMENTAL %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\\Users\\Nikita Korovin\\AppData\\Local\\node-gyp\\Cache\\24.6.0\\x64\\node.lib&quot;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;delayimp.lib;&quot;C:\\Users\\Nikita Korovin\\AppData\\Local\\node-gyp\\Cache\\24.7.0\\x64\\node.lib&quot;</AdditionalDependencies>
       <AdditionalOptions>/guard:cf /LTCG:INCREMENTAL /ignore:4199 %(AdditionalOptions)</AdditionalOptions>
       <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -132,7 +132,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.7.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=conpty_console_list;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;_FILE_OFFSET_BITS=64;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_CPP_EXCEPTIONS;_HAS_EXCEPTIONS=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
@@ -143,7 +143,7 @@
     <ClCompile Include="..\src\win\conpty_console_list.cc">
       <ObjectFileName>$(IntDir)\src\win\conpty_console_list.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\projects\node-pty\node_modules\.pnpm\node-gyp@10.3.1\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
+    <ClCompile Include="C:\projects\node-pty\node_modules\.pnpm\node-gyp@11.4.2\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api\node_addon_api_except.vcxproj">
