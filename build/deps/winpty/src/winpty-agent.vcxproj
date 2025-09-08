@@ -24,7 +24,7 @@
     <SpectreMitigation>Spectre</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>ClangCL</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -45,14 +45,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\..\deps\winpty\src\gen;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\..\..\..\deps\winpty\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/Zc:__cplusplus /Zm2000 /guard:cf /w34244 /w34267 /ZH:SHA_256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:__cplusplus -std:c++20 /Zm2000 /guard:cf /w34244 /w34267 /ZH:SHA_256 %(AdditionalOptions)</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <LanguageStandard_C>stdc11</LanguageStandard_C>
       <MinimalRebuild>false</MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OmitFramePointers>false</OmitFramePointers>
@@ -89,7 +87,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\..\..\deps\winpty\src\gen;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\..\..\..\deps\winpty\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/Zc:__cplusplus /Zm2000 /guard:cf /w34244 /w34267 /ZH:SHA_256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:__cplusplus -std:c++20 /Zm2000 /guard:cf /w34244 /w34267 /ZH:SHA_256 %(AdditionalOptions)</AdditionalOptions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -98,8 +96,6 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <LanguageStandard_C>stdc11</LanguageStandard_C>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OmitFramePointers>true</OmitFramePointers>
       <Optimization>Full</Optimization>
@@ -260,7 +256,7 @@
     <ClCompile Include="..\..\..\..\deps\winpty\src\shared\WinptyVersion.cc">
       <ObjectFileName>$(IntDir)\deps\winpty\src\shared\WinptyVersion.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\projects\node-pty\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
+    <ClCompile Include="C:\projects\node-pty\node_modules\.pnpm\node-gyp@10.3.1\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>

@@ -21,7 +21,7 @@
   },
   "variables": {
     "asan": 0,
-    "clang": 1,
+    "clang": 0,
     "control_flow_guard": "false",
     "coverage": "false",
     "dcheck_always_on": 0,
@@ -500,14 +500,18 @@
     "standalone_static_library": 1,
     "msbuild_path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
     "cache": "C:\\Users\\Nikita Korovin\\AppData\\Local\\npm-cache",
+    "frozen_lockfile": "",
     "globalconfig": "C:\\Users\\Nikita Korovin\\AppData\\Roaming\\npm\\etc\\npmrc",
     "global_prefix": "C:\\Users\\Nikita Korovin\\AppData\\Roaming\\npm",
     "init_module": "C:\\Users\\Nikita Korovin\\.npm-init.js",
     "local_prefix": "C:\\projects\\node-pty",
-    "node_gyp": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js",
+    "node_gyp": "C:\\Users\\Nikita Korovin\\AppData\\Local\\node\\corepack\\v1\\pnpm\\9.15.0\\dist\\node_modules\\node-gyp\\bin\\node-gyp.js",
     "npm_version": "11.5.1",
     "prefix": "C:\\Users\\Nikita Korovin\\AppData\\Roaming\\npm",
+    "registry": "https://registry.npmjs.org/",
     "userconfig": "C:\\Users\\Nikita Korovin\\.npmrc",
-    "user_agent": "npm/11.5.1 node/v24.6.0 win32 x64 workspaces/false"
+    "user_agent": "pnpm/9.15.0 npm/? node/v24.6.0 win32 x64",
+    "_arbuzalchemy_registry": "https://npm.pkg.github.com/",
+    "__registry": "https://npm.pkg.github.com/"
   }
 }

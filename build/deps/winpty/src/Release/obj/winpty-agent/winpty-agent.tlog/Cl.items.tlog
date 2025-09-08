@@ -26,4 +26,4 @@ C:\projects\node-pty\deps\winpty\src\shared\WindowsVersion.cc;C:\projects\node-p
 C:\projects\node-pty\deps\winpty\src\shared\WinptyAssert.cc;C:\projects\node-pty\build\deps\winpty\src\Release\obj\winpty-agent\deps\winpty\src\shared\WinptyAssert.obj
 C:\projects\node-pty\deps\winpty\src\shared\WinptyException.cc;C:\projects\node-pty\build\deps\winpty\src\Release\obj\winpty-agent\deps\winpty\src\shared\WinptyException.obj
 C:\projects\node-pty\deps\winpty\src\shared\WinptyVersion.cc;C:\projects\node-pty\build\deps\winpty\src\Release\obj\winpty-agent\deps\winpty\src\shared\WinptyVersion.obj
-C:\projects\node-pty\node_modules\node-gyp\src\win_delay_load_hook.cc;C:\projects\node-pty\build\deps\winpty\src\Release\obj\winpty-agent\win_delay_load_hook.obj
+C:\projects\node-pty\node_modules\.pnpm\node-gyp@10.3.1\node_modules\node-gyp\src\win_delay_load_hook.cc;C:\projects\node-pty\build\deps\winpty\src\Release\obj\winpty-agent\win_delay_load_hook.obj

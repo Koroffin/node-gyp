@@ -24,7 +24,7 @@
     <SpectreMitigation>Spectre</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>ClangCL</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -49,16 +49,14 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/guard:cf /w34244 /we4267 /ZH:SHA_256 /Zc:__cplusplus /Zm2000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/guard:cf /w34244 /we4267 /ZH:SHA_256 /Zc:__cplusplus -std:c++20 /Zm2000 %(AdditionalOptions)</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;4506;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <EnablePREfast>true</EnablePREfast>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <LanguageStandard_C>stdc11</LanguageStandard_C>
       <MinimalRebuild>false</MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OmitFramePointers>false</OmitFramePointers>
@@ -88,14 +86,14 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=pty;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;_FILE_OFFSET_BITS=64;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_CPP_EXCEPTIONS;_HAS_EXCEPTIONS=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/guard:cf /w34244 /we4267 /ZH:SHA_256 /Zc:__cplusplus /Zm2000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/guard:cf /w34244 /we4267 /ZH:SHA_256 /Zc:__cplusplus -std:c++20 /Zm2000 %(AdditionalOptions)</AdditionalOptions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;4506;4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -105,8 +103,6 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <LanguageStandard_C>stdc11</LanguageStandard_C>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OmitFramePointers>true</OmitFramePointers>
       <Optimization>Full</Optimization>
@@ -136,7 +132,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\include\node;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\src;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\config;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\openssl\openssl\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\uv\include;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\zlib;C:\Users\Nikita Korovin\AppData\Local\node-gyp\Cache\24.6.0\deps\v8\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;..\deps\winpty\src\include;..\node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=pty;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;_FILE_OFFSET_BITS=64;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_CPP_EXCEPTIONS;_HAS_EXCEPTIONS=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
@@ -150,11 +146,11 @@
     <ClCompile Include="..\src\win\path_util.cc">
       <ObjectFileName>$(IntDir)\src\win\path_util.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\projects\node-pty\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
+    <ClCompile Include="C:\projects\node-pty\node_modules\.pnpm\node-gyp@10.3.1\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="node_modules\node-addon-api\node_addon_api_except.vcxproj">
-      <Project>{550E64F5-3401-E633-0DC0-229D58B15A1F}</Project>
+    <ProjectReference Include="node_modules\.pnpm\node-addon-api@7.1.1\node_modules\node-addon-api\node_addon_api_except.vcxproj">
+      <Project>{EB598934-3D61-1228-37B1-3EECF4723000}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="deps\winpty\src\winpty-agent.vcxproj">
