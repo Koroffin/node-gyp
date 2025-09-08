@@ -28,15 +28,19 @@
 #ifndef PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE
 #define PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE \
   ProcThreadAttributeValue(22, FALSE, TRUE, FALSE)
+#endif
 
+// Always define HPCON if not already defined (for older SDKs)
+#ifndef HPCON
 typedef VOID* HPCON;
+#endif
+
+// Always define function pointer types - these are needed for dynamic loading regardless of SDK version
 typedef HRESULT (__stdcall *PFNCREATEPSEUDOCONSOLE)(COORD c, HANDLE hIn, HANDLE hOut, DWORD dwFlags, HPCON* phpcon);
 typedef HRESULT (__stdcall *PFNRESIZEPSEUDOCONSOLE)(HPCON hpc, COORD newSize);
 typedef HRESULT (__stdcall *PFNCLEARPSEUDOCONSOLE)(HPCON hpc);
 typedef void (__stdcall *PFNCLOSEPSEUDOCONSOLE)(HPCON hpc);
 typedef void (__stdcall *PFNRELEASEPSEUDOCONSOLE)(HPCON hpc);
-
-#endif
 
 struct pty_baton {
   int id;
